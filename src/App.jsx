@@ -21,26 +21,4 @@ export default class DemoApp extends React.Component {
       />
     );
   }
-  renderForm() {
-    return (
-      <div
-        className={
-          this.state.formInview ? "container__form inview" : "container__form"
-        }
-      >
-        <form>
-          {this.state.isChange  ? (
-            <div className="container__form__header">予定を変更</div>
-          ) : (
-            <div className="container__form__header">予定を入力</div>
-          )}
-          <div>{this.renderTitle()}</div>
-          <div>{this.renderStartTime()}</div>
-          <div>{this.renderEndTime()}</div>
-          <div>{this.renderMemo()}</div>
-          <div>{this.renderBtn()}</div>
-        </form>
-      </div>
-    );
-  }
 }
